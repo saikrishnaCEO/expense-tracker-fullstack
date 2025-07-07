@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-coins"></i> Expense Tracker</h1>
+
+    <div id="message" class="success-message"></div>
+
+    <form id="expenseForm">
+      <div class="input-group">
+        <i class="fas fa-utensils"></i>
+        <input type="text" id="category" placeholder="Category (e.g. Food)" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-rupee-sign"></i>
+        <input type="number" id="amount" placeholder="Amount" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-calendar-day"></i>
+        <input type="date" id="date" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-comment-dots"></i>
+        <input type="text" id="description" placeholder="Description (optional)" />
+      </div>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <div class="expense-list" id="expenseList"></div>
+
+    <div class="pagination">
+      <button id="prevBtn">⬅ Prev</button>
+      <span id="pageInfo">Page 1</span>
+      <button id="nextBtn">Next ➡</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
